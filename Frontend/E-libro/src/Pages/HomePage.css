@@ -1,0 +1,76 @@
+/* File: src/components/WelcomePage.css */
+
+
+
+.Home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+    background-color: #ffffff;
+  }
+  
+  .Home-content {
+    max-width: 50%;
+  }
+  
+  .Home-title {
+    font-size: 140px;
+    color: #0A2B69D6;
+    margin: 20px 0 0 42px  ;
+    font-family: Marko One;
+  }
+  
+  .Home-message {
+    font-size: 44px;
+    color: #0A2B69D6;
+    margin: 10px 0 10px 42px;
+    font-family: Convergence;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  .Home-button {
+    display: block;
+    padding: 15px 30px;
+    background-color: #537AF2;
+    color:black;
+    font-family: Manuale;
+    font-size:  44px;
+    border-radius: 35px;
+    border: none;
+    cursor: pointer;
+    margin: 50px 0 0 152px;
+    width: 520px;
+    height: 88px;
+  }
+  
+  .Home-button:hover {
+    background-color: #4a79e0;
+  }
+  
+  .login-link {
+    font-size:34px;
+    color:#0000007A;
+    margin: 20px 0 0 152px;
+
+  }
+  
+  .login-link a {
+    color: #0b3d91;
+    text-decoration: none;
+    text-decoration: underline;
+
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .welcome-image img {
+    width: 512px;
+    height: 512px;
+    margin-top: 1px;
+  }
+  
