@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import './AuthForm.css'; // Import the CSS file for styling
+import './AuthForm.css'; 
 
 const AuthForm = () => {
   return (
@@ -9,7 +9,7 @@ const AuthForm = () => {
       <div className="auth-form">
         <input type="text" placeholder="Username" className="auth-input" />
         <input type="password" placeholder="Password" className="auth-input" />
-        <Link to="/signup"> <button className="auth-button">Sign Up</button></Link>
+        <Link to="/book"> <button className="auth-button">Log In</button></Link>
         <div className="auth-divider">
           <hr className="auth-line" /> or <hr className="auth-line" />
         </div>

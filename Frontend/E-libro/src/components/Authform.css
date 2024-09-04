@@ -1,29 +1,30 @@
-/* File: src/components/AuthForm.css */
-
 .auth-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f8f8f8;
-  }
-  
-  .auth-title {
-    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.auth-title {
+    font-size: 8vw; /* Responsive font size */
     color: #0b3d91;
     margin-bottom: 20px;
-  }
-  
-  .auth-form {
+}
+
+.auth-form {
     background-color: #ffffff;
     border-radius: 10px;
-    padding: 40px;
+    padding: 30px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Restrict width for larger screens */
     text-align: center;
-  }
-  
-  .auth-input {
+}
+
+.auth-input {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
@@ -32,39 +33,43 @@
     font-size: 1rem;
     color: #0b3d91;
     background-color: #e0e8ff;
-  }
-  
-  .auth-button {
+}
+
+.auth-button {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
     border-radius: 25px;
     background-color: #5b8ef9;
     color: white;
-    font-size: 1.2rem;
+    font-size: 4vw; /* Responsive font size */
     border: none;
     cursor: pointer;
-  }
-  
-  .auth-button:hover {
+}
+
+.auth-button:hover {
     background-color: #4a79e0;
-  }
-  
-  .auth-divider {
+}
+
+.auth-divider {
     display: flex;
     align-items: center;
     margin: 20px 0;
-  }
-  
-  .auth-line {
+}
+
+.auth-line {
     flex-grow: 1;
     height: 1px;
     background-color: #ddd;
     margin: 0 10px;
-  }
-  
-  .auth-container .auth-divider {
-    color: #666;
-    font-size: 0.9rem;
-  }
-  
+}
+
+@media (min-width: 768px) {
+    .auth-title {
+        font-size: 2.5rem;
+    }
+
+    .auth-button {
+        font-size: 1.2rem;
+    }
+}
