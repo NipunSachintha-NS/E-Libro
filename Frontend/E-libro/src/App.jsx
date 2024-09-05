@@ -6,6 +6,7 @@ import HomePage from "./Pages/HomePage"
 import Book from './Pages/Content/Book';
 import Profile from './Pages/Content/Profile';
 import Report from './Pages/Content/Report';
+import AddBook from './components/AddBook';
 function App() {
   
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/book" element = {<Book/>}/>
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/report" element={<Report/>}/>
+      <Route path="/addBook" element={<AddBook/>}/>
         </Routes>
         </Router>
     </>

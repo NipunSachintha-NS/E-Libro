@@ -1,7 +1,5 @@
-// File: src/components/WelcomePage.js
-
 import React from 'react';
-import './HomePage.css'; // Import the CSS file for styling
+import './HomePage.css'; 
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
