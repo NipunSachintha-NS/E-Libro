@@ -1,20 +1,16 @@
 import React from "react";
-const styles = () => {
-  height: "10px";
-  width: "100px";
+import { BiFontSize } from "react-icons/bi";
+const styles = {
+  height: "60px",
+  width: "500px",
+  margin:"10px",
+  fontSize:"0.6rem",
+  padding:'10px'
 };
 function AddBook() {
   return (
     <>
-      <div className="">
-        <h1>Book Details</h1>
-        <div className="bg">
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-        </div>
-      </div>
+      
     </>
   );
 }

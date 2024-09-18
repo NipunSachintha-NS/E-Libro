@@ -9,7 +9,7 @@ function Report() {
   
      
     <NavBar/>
-    <div className="w-screen h-screen flex items-center justify-center">
+    <div className="w-screen h-screen flex items-center justify-center bg-ash">
 
       <div className="border border-blue-300 w-96 h-72 p-8 bg-customBlueTransparent rounded-md  " >
         
