@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AuthForm from "./components/AuthForm"
 import RegistrationForm from "./components/RegistrationForm"
-
 import HomePage from "./Pages/HomePage"
 import Book from './Pages/Content/Book';
 import Profile from './Pages/Content/Profile';
+import Edit from './Pages/Content/Edit';
 import Report from './Pages/Content/Report';
 import AddBook from './components/AddBook';
+
 function App() {
   
 
@@ -21,6 +22,8 @@ function App() {
       <Route path="/profile" element={<Profile/>}/>
       <Route path="/report" element={<Report/>}/>
       <Route path="/addBook" element={<AddBook/>}/>
+      <Route path="/Edit" element={<Edit/>}/>
+
         </Routes>
         </Router>
     </>
