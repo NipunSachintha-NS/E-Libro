@@ -21,7 +21,7 @@ authRouter.post("/addbook", async (req, res) => {
 authRouter.get("/getbooks", async (req, res) => {
   try {
     const allBooks = await Book.find();
-    res.status(200).json(allBooks);
+    res.send(allBooks);
   } catch (err) {
     console.error("error occur");
   }
@@ -34,8 +34,8 @@ authRouter.patch("/update", async (req, res) => {
   res.send("user update successfully");
 });
 
-authRouter.delete("/delete", async (req, res) => {
-  const { id } = req.body;
+authRouter.delete("/delete/:id", async (req, res) => {
+  const { id } = req.params;
   await Book.findByIdAndDelete(id);
   res.send("user delete sucussfully");
 });
