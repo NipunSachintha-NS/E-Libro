@@ -10,7 +10,8 @@ const HomePage = () => {
         <p className="Home-message">
           "Home to your personal e-library. Start managing your books!"
         </p>
-        <button className="Home-button">Get Started</button>
+        <Link to ="/signup"><button className="Home-button"> Get Started</button></Link>
+        
         <p className="login-link">
           Do you have an account? <Link to ="/login">Log In</Link>
         </p>
