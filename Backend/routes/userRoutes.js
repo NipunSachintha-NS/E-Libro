@@ -17,4 +17,24 @@ router.post('/signup', (req, res) => {
  }) 
 
 
+ router.post("/login", (req,res) =>{
+    const {name, password} = req.body;
+     UserModel.findOne({name:name})
+    .then(user => {
+        if(user) {
+            bcrypt.compare(password,user.password, (err, response) =>{   
+                 if(response) {
+                    res.json("Login Succussfuly")     
+                } else {
+                    res.json("The password is incorrect")  
+                }
+          })
+
+        } else {
+            res.json("No record existed")  
+        }
+    }).catch(err => console.log(err))
+})
+
+
 module.exports = router;
