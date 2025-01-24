@@ -35,7 +35,7 @@ function AddBook() {
 
   return (
     <div className="flex justify-center items-center h-screen bg-gray-100">
-      <div className="bg-blue-100 p-8 rounded-lg shadow-lg">
+      <div className="bg-blue-100 p-8 rounded-lg shadow-lg w-96 h-4/6">
         <h2 className="text-2xl font-semibold text-blue-600 mb-6 text-center">
           Book Details
         </h2>
@@ -64,7 +64,7 @@ function AddBook() {
           <input
             type="text"
             placeholder="Description"
-            className="block w-full mb-4 px-3 py-2 text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="block w-full mb-4 px-3  text-sm border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 h-28"
             onChange={(e) => setDescription(e.target.value)}
             value={description}
           />
