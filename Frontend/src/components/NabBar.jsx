@@ -40,6 +40,14 @@ function NabBar() {
         >
           Profile
         </NavLink>
+        <NavLink
+          to="/login"
+          className={({ isActive }) =>
+            `${baseStyle} ${isActive ? activeStyle : inactiveStyle}`
+          }
+        >
+          Sign Out
+        </NavLink>
       </div>
     </div>
   );
