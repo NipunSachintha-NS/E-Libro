@@ -7,6 +7,7 @@ import Profile from './Pages/Content/Profile';
 import Edit from './Pages/Content/Edit';
 import Report from './Pages/Content/Report';
 import AddBook from './components/AddBook';
+import EditeBook from './components/EditeBook';
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
       <Route path="/report" element={<Report/>}/>
       <Route path="/addBook" element={<AddBook/>}/>
       <Route path="/Edit" element={<Edit/>}/>
+      <Route path ="/Bedit" element = {<EditeBook/>}/>
 
         </Routes>
         </Router>

@@ -2,12 +2,13 @@ import React, { useEffect , useState } from "react";
 import NavBar from "../../components/NabBar";
 import { FaPenAlt } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 
 export default function Book() {
    const [data , setData]= useState([]);
+   const navigate = useNavigate();
    
    const fetchBooks = async () =>{
     try {
@@ -38,7 +39,17 @@ export default function Book() {
     }
   }
   
-
+async function getOnebook(id){
+  try{
+const data =await axios.get(`http://localhost:3001/get/${id}`);
+// console.log("get book with ID:", id);
+// console.log(data.data);
+navigate("/Bedit" , { state: {btnId: id}});
+  }
+  catch(error){
+    console.error("Error getting book:", error);
+  }
+}
   return (
     <>
       <div className="flex  bg-ash">
@@ -51,7 +62,8 @@ export default function Book() {
             data.map((book)=>(
               <div key={book.id} className="bg-slate-300  flex h-18 ml-20 mt-10 mr-44 rounded-md ">
             <p className="p-6 text-2xl "> {book.title} </p>
-            <FaPenAlt className="text-2xl m-6 ml-50 text-green-600 order-last" />
+           <FaPenAlt className="text-2xl m-6 ml-50 text-green-600 order-last"  onClick={()=>getOnebook(book._id)}/>
+            
             <MdDeleteForever className="text-3xl mt-5  text-red-600"
             onClick={()=> bookDelete(book._id) } />
             
