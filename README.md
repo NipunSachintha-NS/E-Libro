@@ -34,4 +34,14 @@ npm run dev  # Start frontend
 npm run server  # Start backend
 ```
 
+## 🎨 Screenshots
+
+![image](https://github.com/user-attachments/assets/195f6645-9844-4a4c-bc73-4a762d1834f2)
+
+![image](https://github.com/user-attachments/assets/66d57b47-86c8-4f92-b897-75408869047e)
+
+![image](https://github.com/user-attachments/assets/93200e5b-35a8-4f6a-8f1e-25db9fb42d29)
+
+![image](https://github.com/user-attachments/assets/3dabbe27-f9bc-4304-baef-d059ee14735c)
+
 ## Thank you for visiting the repository! Feel free to explore and share feedback 🌟
